@@ -10,7 +10,7 @@ ul, ol{
 
 /* Navbar part start */
 nav{
-  background:goldenrod ;
+  background:rgb(18, 5, 100) ;
   padding: 30px 0 !important;
 }
  .navbar-nav{
@@ -25,7 +25,7 @@ nav{
   font-weight: 500;
 }
 .nav-link:hover{
-  color: rgb(10, 10, 10);
+  color: rgb(232, 243, 118);
 }
 
 .button a{
@@ -49,7 +49,7 @@ nav{
 
 /* Banner part start */
  .banner{
-  background: goldenrod;
+  background: rgb(16, 4, 95);
   padding: 126px 0;
  }
  .banner h1{
@@ -104,12 +104,206 @@ nav{
   display: flex;
   align-items: center;
   column-gap: 16px;
+  position: relative;
  }
  .button-3 i{
   color: white;
+  position: absolute;
+  top: 13%;
+  left: 100%;
+  opacity: 0;
+  transition: 1s;
  }
- .button-3:hover i {
-  color: black;
- }
- 
+
+.button-3:hover i {
+  color: white;
+  top: 13%;
+  left: 150%;
+  opacity: 1;
+ } 
+
 /* Banner part end */
+ 
+/* Work Part start */
+.work{
+  background: #F4F6FC;
+  padding: 128px 0;
+}
+.work-title h2{
+  text-transform: capitalize;
+  font-size: 48px;
+  font-weight: 600;
+  width: 405px;
+  font-family: "Poppins", serif;
+  color: #282938;
+}
+.work-title p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  color: #282938;
+  width: 405px;
+  padding: 16px 0; 
+}
+.button-4 a{
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+}
+.button-4{
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  position: relative;
+  color: #2405F2;
+}
+.button-4 i{
+  color: rgb(4, 3, 3);
+  position: absolute;
+  top: 27%;
+  left: 36%;
+   opacity: 0;
+  transition: 1s;
+}
+ .button-4:hover i {
+  color: rgb(14, 13, 13);
+  top: 27%;
+  left: 40%;
+  opacity: 1;
+ } 
+ .box{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+ }
+ .work-box{
+  width: 328px;
+ }
+ .work-box h4{
+  font-size: 32px;
+  font-weight:500;
+  font-family: "Poppins", serif;
+  color: #282938;
+  padding-top: 16px;
+  padding-bottom: 8px;
+ }
+ .work-box p{
+  font-size: 16px;
+  font-weight:400;
+  font-family: "Poppins", serif;
+  color: #282938;
+  width: 303px;
+ }
+  
+/* Work part end */
+
+/* Project part start */
+.project-title{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+.title h2{
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  color: #282938;
+  
+}
+.button-5 a{
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  color: #282938;
+}
+.button-5{
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  position: relative;
+}
+.button-5 i{
+  color: #282938;
+  position: absolute;
+  top: 15%;
+  left: 110%;
+  opacity: 0; 
+  transition: 1s;
+}
+.button-5:hover i {
+  color: #282938;
+  top: 15%;
+  left: 130%;
+  opacity: 1;
+}
+
+.project-layout{
+  position: relative;
+  overflow: hidden;
+}
+.project-layout .overlay{
+  position: absolute;
+  top: 0;
+  left: -48%;
+  width: 48%;
+  height: 100%;
+  background-image: linear-gradient(to bottom left, rgba(28, 30, 83, 0.42), #1C1E53);
+  transition: 0.7s;
+}
+ .project-layout:hover .overlay{
+  left: 0;
+} 
+.overlay-title{
+  padding-top:312px ;
+  padding-right: 40px;
+  padding-left: 48px;
+}
+.overlay-title h2{
+ font-size: 24px; 
+ font-weight: 600;
+ font-family: "Poppins", serif;
+ width: 313px;
+ color: #FFFFFF;
+}
+.overlay-title p{
+ font-size: 16px; 
+ font-weight: 500;
+ font-family: "Poppins", serif;
+ width: 293px;
+ color: #FFFFFF;
+ padding: 30px 0;
+}
+ .button-6{
+  position: relative;
+} 
+.button-6 a{
+  font-size: 16px; 
+ font-weight: 500;
+ font-family: "Poppins", serif;
+  color: #FCD980;
+}
+ .button-6 i{
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.button-6:hover i{
+  color: white;
+  top: 25%;
+  left: 35%;
+  opacity: 1;
+} 
+.project-box2{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+
+/* Project part end */

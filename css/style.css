@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 /* Common css start */
 a{
   text-decoration: none;
@@ -38,7 +41,7 @@ nav{
   color: #FFFFFF;
   border: 2px solid #0f101033;
   border-radius: 41px;
-   transition: .4s;
+  transition: .4s;
 }
 .button a:hover{
   background: white;
@@ -48,79 +51,76 @@ nav{
 /* Navbar part end */
 
 /* Banner part start */
- .banner{
-  background: rgb(16, 4, 95);
-  padding: 126px 0;
- }
- .banner h1{
-  width: 512px;
-  font-size: 54px;
-  color: #FFFFFF;
-  line-height: 74px;
-  font-weight: 600;
-  font-family: "Poppins", serif;;
- }
- .banner p{
-  width: 420px;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 28px;
-  font-weight: 500;
-  font-family: "Poppins", serif;
-  padding-top: 40px;
-  padding-bottom: 48px;
- }
+.banner{
+background: rgb(16, 4, 95);
+padding: 126px 0;
+}
+.banner h1{
+ width: 512px;
+font-size: 54px;
+color: #FFFFFF;
+line-height: 74px;
+font-weight: 600;
+font-family: "Poppins", serif;;
+}
+.banner p{
+width: 420px;
+font-size: 16px;
+color: rgba(255, 255, 255, 0.7);
+line-height: 28px;
+font-weight: 500;
+font-family: "Poppins", serif;
+padding-top: 40px;
+padding-bottom: 48px;
+}
 
- .button-2 a{
- background-color: bisque;;
-  padding: 16px 48px ;
-  font-size: 18px;
-  font-family: "Manrope", serif;
-  font-weight: 600;
-  color: black;
-  border: 1px solid #0f101033;
-  border-radius: 41px;
-  transition: .4s;
-  display: inline-block;
- }
- .button-2 a:hover{
-  
-  color: white;
-  background: transparent;
-  border-color: rgba(244, 246, 252, 0.20);
- }
- .button-3 a{
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Poppins", serif;
- }
- .box{
-  display: flex;
-  column-gap: 40px;
-  align-items: center;
- }
- .button-3{
-  display: flex;
-  align-items: center;
-  column-gap: 16px;
-  position: relative;
- }
- .button-3 i{
-  color: white;
-  position: absolute;
-  top: 13%;
-  left: 100%;
-  opacity: 0;
-  transition: 1s;
- }
-
+.button-2 a{
+background-color: bisque;;
+padding: 16px 48px ;
+font-size: 18px;
+font-family: "Manrope", serif;
+font-weight: 600;
+color: black;
+border: 1px solid #0f101033;
+border-radius: 41px;
+transition: .4s;
+display: inline-block;
+}
+.button-2 a:hover{
+color: white;
+background: transparent;
+border-color: rgba(244, 246, 252, 0.20);
+}
+.button-3 a{
+color: white;
+font-size: 16px;
+font-weight: 500;
+font-family: "Poppins", serif;
+}
+.box{
+display: flex;
+column-gap: 40px;
+align-items: center;
+}
+.button-3{
+display: flex;
+align-items: center;
+column-gap: 16px;
+position: relative;
+}.button-3 i{
+color: white;
+position: absolute;
+top: 13%;
+left: 100%;
+opacity: 0;
+transition: 1s;
+}
 .button-3:hover i {
-  color: white;
-  top: 13%;
-  left: 150%;
-  opacity: 1;
- } 
+color: white;
+top: 13%;
+left: 150%;
+opacity: 1;
+} 
 
 /* Banner part end */
  
@@ -199,6 +199,10 @@ nav{
 /* Work part end */
 
 /* Project part start */
+.project-part{
+  display: flex;
+  padding-bottom: 100px;
+}
 .project-title{
   display: flex;
   align-items: center; 
@@ -250,7 +254,7 @@ nav{
   left: -48%;
   width: 48%;
   height: 100%;
-  background-image: linear-gradient(to bottom left, rgba(28, 30, 83, 0.42), #1C1E53);
+  background-image: linear-gradient(to bottom right, rgba(28, 30, 83, 0.42), #1C1E53);
   transition: 0.7s;
 }
  .project-layout:hover .overlay{
@@ -304,6 +308,630 @@ nav{
   flex-direction: column;
   row-gap: 15px;
 }
-
+.sub-project1{
+  position: relative;
+  overflow: hidden;
+}
+.sub-overlay1{
+ position: absolute;
+ top: -100%;
+ bottom: 100%;
+ width: 100%;
+ height: 100%;
+ background-image: linear-gradient(to bottom right, rgba(28, 30, 83, 0.2), #1C1E53);
+ transition: .5s;
+}
+ .sub-project1:hover .sub-overlay1{
+  top: 0;
+ }
+.sub-project2{
+  position: relative;
+  overflow: hidden;
+}
+.sub-overlay2{
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient( to top right, rgba(28, 30, 83, 0.2), #1C1E53);
+  transition: .4s;
+}
+.sub-project2:hover .sub-overlay2{
+  top: 0;
+}
 
 /* Project part end */
+
+/* Design part start */
+  .design{
+    background:#F4F6FC ;
+    padding-bottom: 50px;
+  }
+   .design{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  } 
+  .design-title p{
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  color: #282938;
+  width: 419px;
+  padding-top: 128px;
+  text-align: center;
+  margin: auto;
+  }
+  .design-title h2{
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  color: #282938;
+  width: 630px;
+  padding-top: 12px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 24px;
+  }
+  
+  .first{
+  display: flex;
+  column-gap: 32px; 
+  }
+  .second{
+  display: flex;
+  column-gap: 32px;
+    
+  }
+  .first-card{
+  background: white;
+  padding-left: 60px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  }
+  .first-card p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  width: 324px;
+  color: #282938;
+  line-height: 28px;
+  }
+  .first-card h3{
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  width: 314px;
+  color: #282938;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  }
+  .second-card{
+  background: white;
+  padding-left: 60px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  }
+  .second-card p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  width: 324px;
+  color: #282938;
+  line-height: 28px;
+  }
+.second-card h3{
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  width: 314px;
+  color: #282938;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  }
+  .third-card{
+  background: white;
+  padding-left: 60px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  }
+  .third-card h3{
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  width: 314px;
+  color: #282938;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  }
+  .third-card p{
+   font-size: 16px;
+   font-weight: 400;
+   font-family: "Poppins", serif;
+   width: 324px;
+   color: #282938;
+   line-height: 28px;
+  }
+    .fourth-card{
+  background: white;
+  padding-left: 60px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+ }
+  .fourth-card h3{
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Poppins"serif;
+  width: 314px;
+  color: #282938;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  }
+ .fourth-card p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins"serif;
+  width: 324px;
+  color: #282938;
+  line-height: 28px;
+  }
+  .fifth-card{
+    background: white;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .fifth-card h3{
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  width: 314px;
+  color: #282938;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  }
+.fifth-card p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  width: 324px;
+  color: #282938;
+  line-height: 28px;
+  }
+  .sixth-card{
+  background: white;
+  padding-left: 60px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  }
+ .sixth-card p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  width: 324px;
+  color: #282938;
+  line-height: 28px;
+  }
+  .sixth-card h3{
+  font-size: 24px;
+  font-weight: 500;
+  font-family:"Poppins", serif;
+  width: 314px;
+  color: #282938;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  }
+ /* Design part end */
+
+/* About part start */
+         
+          
+.about{
+background: rgb(253, 250, 250); padding: 100px 0;
+}
+.about-title h2{
+width: 327px;
+font-size: 38px;
+font-weight: 600;
+font-family: "Poppins", serif;
+color: #282938;
+}
+.about-title p{
+width: 327px;
+font-size: 16px;
+font-weight: 400;
+font-fa"Poppins", serif;
+padding-top: 16px;
+color: #282938;
+}
+.about-title2 h4{
+width: 843px;
+font-size: 32px;
+font-weight: 500;
+font-family: "Poppins", serif;
+color: #282938;
+padding-bottom: 40px;
+}
+.about-profile{
+ display: flex; 
+column-gap:10px ;
+align-items: center;
+}
+.profile-name{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 20px;
+}
+.profile img{
+border-radius: 50%;
+}
+.profile-name h5{
+width: 183px;
+font-size:18px;
+font-weight: 400;
+font-family: "Poppins", serif;
+}
+.profile-name p{
+width: 183px;
+font-size:12px;
+font-weight: 500;
+font-family: "Poppins", serif;
+}
+/* About part end */
+
+ /* FAQ part start */
+.FAQ{
+background: white;
+padding: 128px 0;
+}
+.faq-title h3{
+width: 328px;
+font-size: 38px;
+font-weight: 600;
+line-height: 56px;
+font-family:"Poppins", serif ;
+color: #282938;
+padding-bottom: 16px;
+}
+.faq-title a{
+font-size: 18px;
+font-weight: 500;
+color: #2405F2;
+font-family:"Poppins", serif ;           
+}
+.button-7{
+position: relative;
+}
+.button-7 i{
+position: absolute;
+color: black;
+top: 25%;
+left: 53%;
+transition: 0.4s;
+opacity: 0;
+}
+.button-7:hover i{
+left: 60%;
+opacity: 1; 
+}
+.questions{
+display: flex;
+column-gap: 59px;
+position: relative;
+}
+.number1{
+font-size: 24px;
+font-family: "Poppins", serif; 
+font-weight: 500;
+color: #2405F2;
+display: inline;
+}
+.questions h5{
+width: 350px;
+font-family: "Poppins", serif; 
+font-size: 24px;
+font-weight: 500;
+color: #282938;
+padding-bottom: 10px;
+color: #282938;
+}
+.questions .para2{
+width: 624px;
+font-family: "Poppins", serif; 
+font-size: 18px;
+font-weight: 500;
+color: #282938;
+padding-bottom: 50px;
+}
+.questions:after{
+height: 2px;
+width: 92%;
+top: 80%;
+left: -1%;
+position: absolute;
+background: #ECECF1;
+content: "";
+}
+.questions2{
+display: flex;
+column-gap: 59px;
+padding-bottom: 50px;
+position: relative;
+}
+.number2{
+font-size: 24px;
+font-family: "Poppins", serif; 
+font-weight: 500;
+color: #2405F2;
+display: inline;
+}
+.h5-second{
+width: 476px;
+font-family: "Poppins", serif;
+font-weight: 500;
+font-size: 24px;
+              
+}
+.questions2 i{
+width: 16px;
+padding-left: 140px;
+}
+.questions2::after{
+height: 2px;
+width: 92%;
+position: absolute;
+top: 70%;
+left: -1%;
+background: #ECECF1;
+content: "";
+}
+
+.questions3{
+display: flex;
+column-gap: 59px;
+              
+padding-bottom: 50px;
+position: relative;
+             
+}
+.number3{
+font-size: 24px;
+font-family: "Poppins", serif; 
+font-weight: 500;
+color: #2405F2;
+display: inline;
+}
+.questions3 h5{
+width: 332px;
+font-family: "Poppins", serif;
+font-weight: 500;
+font-size: 24px;
+color: #282938;
+}
+.questions3 i{
+width: 16px;
+height: 16px;
+color: #282938;
+padding-left: 225px;
+}
+.questions3::after{
+height: 2px;
+width: 92%;
+position: absolute;
+top: 70%;
+left: -1%;
+background: #ECECF1;
+content: "";
+}
+.questions4{
+display: flex;
+column-gap: 59px;
+padding-bottom: 50px;
+position: relative;
+}
+.number4{
+font-size: 24px;
+font-family:"Poppins", serif; 
+font-weight: 500;
+color: #2405F2;
+display: inline;
+}
+.questions4 h5{
+width: 512px;
+font-family: "Poppins", serif;
+font-weight: 500;
+font-size: 24px;
+color: #282938;
+}
+.questions4 i{
+width: 16px;
+height: 16px;
+color: #282938;
+padding-left: 105px;
+}
+.questions4::after{
+height: 2px;
+width: 92%;
+position: absolute;
+top: 70%;
+left: -1%;
+background: #ECECF1;
+content: "";
+}
+.questions5{
+display: flex;
+column-gap: 59px;
+position: relative;
+}
+.number5{
+font-size: 24px;
+font-family: "Poppins", serif; 
+font-weight: 500;
+color: #2405F2;
+display: inline;
+}
+.questions5 h5{
+width: 476px;
+font-family: "Poppins", serif;
+font-weight: 500;
+font-size: 24px;
+color: #282938;
+}
+.questions5 i{
+width: 16px;
+height: 16px;
+color: #282938;
+padding-left: 142px; 
+  }
+ /* FAQ part end */ 
+
+ /* Form part start */
+.one{
+width: 50%;
+}
+.two{
+width: 50%;
+}
+.inq{
+display: flex;
+}
+.inquiry-part{
+background: #efebeb;
+padding: 128px 0;
+}
+.background-image{
+position: relative;
+overflow: hidden;
+} 
+.background-image img{
+width: 100%;
+height: 619px;
+ }
+.overlay3{
+position: absolute;
+height: 100%;
+width: 100%;
+top: 100%;
+left: 0;
+background-image: linear-gradient(to top left, rgba(81, 63, 242, 0.4), rgb(69, 11, 207));
+transition: 0.5s;
+}
+.background-image:hover .overlay3{
+  top: 0;
+  } 
+
+.overlay3-title h3{
+width: 514px;
+font-size: 54px;
+font-weight: 600;
+font-family: "Poppins", serif;
+color: white;
+padding-left: 76px;
+padding-top: 96px;
+}
+.overlay3-title p{
+width: 464px;
+font-size: 16px;
+font-weight: 500;
+font-family: "Poppins", serif;
+color: white;
+padding-left:76px ;
+line-height: 28px;
+padding-top: 24px;
+}
+.form-part{
+  background: #1C1E53;
+}
+.form-part h4{
+  width: 432px;
+font-size: 32px;
+font-weight: 500;
+font-family: "Poppins", serif;
+color: #FFFFFF;
+padding-left: 96px;
+padding-right: 96px;
+padding-top: 99px;
+}
+.form-part p{
+width: 532px;
+font-size: 16px;
+font-weight: 500;
+line-height: 28px;
+font-family: "Poppins", serif;
+color: white;
+padding-bottom:50px ;
+padding-left: 99px;
+}
+.form-design{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-left: 96px;
+  outline: none;
+}
+.first-button{
+  width: 70%;
+  padding: 16px 150px;
+  background-color: #FCD980;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-left: 96px;
+  margin-top:34px ;
+  transition: 0.5s;
+}
+.first-button:hover{
+  color: white;
+  background-color: transparent;
+
+}
+.button-8{
+  padding-top: 33px;
+  padding-bottom: 20.5px;
+  padding-left: 243px;
+  align-items: center;
+  position: relative;
+}
+.button-8 a{
+  width: 244px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  color:#FFFFFF ; 
+}
+.button-8 i{
+  color: white;
+  position: absolute;
+  top: 51%;
+  left: 63%;
+  transition: 0.5s;
+  opacity: 0; 
+}
+ .button-8:hover i{
+  left: 68%;
+  opacity: 1;
+} 
+/* Form part end */
+
+
+
+          
+
